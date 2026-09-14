@@ -9,10 +9,6 @@ class Goblin:
         self.health = 100
         self.attack_power = 15
 
-    def attack(self):
-        """Return a random amount of damage."""
-        return random.randint(1, self.attack_power)
-
     def take_damage(self, damage):
         """Reduce health without allowing it to fall below zero."""
         self.health = max(0, self.health - damage)
