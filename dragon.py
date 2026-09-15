@@ -1,7 +1,7 @@
 import random
 
 
-class Goblin:
+class Dragon:
     """A completed character class students can examine as an OOP example."""
 
     def __init__(self, name):
@@ -15,5 +15,5 @@ class Goblin:
         print(f"{self.name} takes {damage} damage. Health: {self.health}")
 
     def is_alive(self):
-        """Return True while the goblin has health remaining."""
+        """Return True while the dragon has health remaining."""
         return self.health > 0
