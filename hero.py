@@ -10,10 +10,9 @@ class Hero:
         self.attack_power = heroPower
         self.heroClass= heroClass
     
-    def attack(self, dragon: Dragon):
+    def attack(self):
         print(f"{self.name} attacks the Dragon")
-        time.sleep(0.5)
-        dragon.take_damage(random.randint(1, self.attack_power))
+        return random.randint(1, self.attack_power)
 
     def take_damage(self):
         print(f"The Dragon attacks {self.name}")
